@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNNY - Referral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FUNNY Crypto</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="referral.html">Referral</a>
+            <a href="wallet.html">Wallet</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Your Referral Link:</h2>
+            <p id="referralLink">https://yourwebsite.com/register?ref=user123</p>
+            <button onclick="copyLink()">Copy Link</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 FUNNY Crypto</p>
+    </footer>
+    <script>
+        function copyLink() {
+            const link = document.getElementById('referralLink').textContent;
+            navigator.clipboard.writeText(link);
+            alert("Referral link copied!");
+        }
+    </script>
+</body>
+</html>
